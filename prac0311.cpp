@@ -5,7 +5,7 @@ using namespace std;
 int length_of_array(char Array[])
 {
 	char* ArrayPointer = Array;
-	while (*ArrayPointer) //ArrayPointer != '\0'
+	while (*ArrayPointer) //ArrayPointer != '\0' until it sees null it goes through the array
 	{
 		ArrayPointer++;
 	}
