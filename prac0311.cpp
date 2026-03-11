@@ -28,6 +28,12 @@ int main()
 	char char_find;
 	//length of array
 	int length = sizeof(Array) / sizeof(Array[0]);
+	cout << "Current array is : ";
+	for (int i = 0; i < length_of_array(Array); i++)
+	{
+		cout << Array[i] << " ";
+	}
+	cout << "\n";
 	cout << "The character im finding is ";
 	cin >> User_input;
 	cout << "Change specific charater to : ";
@@ -49,7 +55,7 @@ int main()
 	cout << "Array of characters : ";
 	for (int i = 0; i < length; i++)
 	{
-		cout << Array[i];
+		cout << Array[i] << " ";
 	}
 	cout << "\n";
 	cout << "index number of specific character you are searching for is : ";
