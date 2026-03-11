@@ -12,7 +12,6 @@ int length_of_array(char Array[])
 		{
 			break;
 		}
-
 	}
 	return length;
 }
@@ -42,6 +41,15 @@ void Change_specific_chara_and_Print(char Array[], char SpecificChara, char Chan
 	cout << IndexSpec << '\n';
 }
 
+void Print_chararray(char Array[], int length)
+{
+	for (int i = 0; i < length; i++)
+	{
+		cout << Array[i] << " ";
+	}
+	cout << "\n";
+}
+
 int main()
 {
 	char Array[6] = { 'a', 'b', 'c', 'd', 'e', '\0'};
@@ -51,11 +59,7 @@ int main()
 	char CharFind;
 
 	cout << "Current array is : ";
-	for (int i = 0; i < length_of_array(Array); i++)
-	{
-		cout << Array[i] << " ";
-	}
-	cout << "\n";
+	Print_chararray(Array, length_of_array(Array));
 	cout << "The character im finding is ";
 	cin >> UserInput;
 	cout << "Change specific charater to : ";
